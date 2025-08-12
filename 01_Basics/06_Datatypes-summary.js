@@ -1,5 +1,10 @@
 // what is callby value or callby reference 
-// [kis tarah se data ko memory me rakha jata hai aur access kiya jata hai uss basis pe datatypes ko 2 category me devide kiya gya prmitive dnon primitive]
+// Based on how the data is stored in memory and how it is accessed, 
+// datatypes are divided into two categories (primitive and primitive)
+
+// javascript is a dynamically typed language.
+
+
 
 // primitive datatype
 
@@ -16,9 +21,9 @@ let userEmail;              // undefined
 
 const id = Symbol('123');
 const anotherId = Symbol('123')
-console.log(id === anotherId);
+console.log(id === anotherId);          //false
 
-const bigInt = 765675665n;        // n will covert this small number in bigInt
+const bigNum = 765675665n;        // n will covert this small number in bigInt
 
 
 // Reference type is know as NON primitive.
@@ -36,9 +41,12 @@ const myFun = function(){
 console.log(myFun);
 }
 
-console.log(typeof bigInt);
-console.log(typeof (outsideTemp));
+console.log(typeof bigNum);              //bigint
+console.log(typeof (outsideTemp));      //object
 console.log(typeof myFun);             // FUNCTION OBJECT
-console.log(typeof Symbol);
+console.log(typeof Symbol);            // function
+console.log(typeof (heros));           //object
+console.log(typeof person);            //object
 
 
+// https://262.ecma-international.org/5.1/#sec-11.4.3

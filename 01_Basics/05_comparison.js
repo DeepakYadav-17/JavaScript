@@ -13,9 +13,9 @@ console.log(null >= 0);    //true
 comparisons convert null to a number, treating it as 0.
 that's why (3) null >= 0 is true and null > 0 is false */
 
-console.log(undefined == 0);
-console.log(undefined > 0);
-console.log(undefined < 0);
+console.log(undefined == 0);         //false
+console.log(undefined > 0);          //false
+console.log(undefined < 0);          //false
 
 // === strictly
-console.log("2"=== 2);
+console.log("2"=== 2);               //false
